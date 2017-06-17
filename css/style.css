@@ -1,6 +1,17 @@
-body{
+body {
     color: rgb(95,95,95);
     font-family: 'Bree Serif', serif;
+}
+
+.anchor{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.anchor:hover{
+    text-decoration: none;
+    color: inherit;
 }
 
 .container {
@@ -8,30 +19,12 @@ body{
     margin: 0 auto;
 }
 
-/*h1 {
-    font-size: 52px;
-    font-weight: 100;
-}*/
-
-/*h4 {
-    font-size: 22px;
-}*/
-
-.logo {
-    margin-top: 20px;
-}
-
 #header {
     position: fixed;
-    color: green;
     margin: 5% 0 0 0;
     padding: 0 5% 0 5%;
     width: 100%;
-}
-
-#dp_img {
-    border : 2;
-    border-color: white;
+    z-index: 1000;
 }
 
 span.img-rounded {
@@ -49,7 +42,7 @@ span.img-rounded {
             border-radius: 50%;
 }*/
 
-#section1{
+#section1 {
     background:url('../img/section1.jpg') 50% 0 no-repeat fixed;
     color: rgb(234,234,234);
     height: 600px;
@@ -100,10 +93,6 @@ span.img-rounded {
     padding-top: 2rem;
 }
 
-.work {
-    margin-bottom: 10px;
-}
-
 #contact-info {
     border-left: 1px solid rgb(234,234,234);
     border-top:  1px solid rgb(234,234,234);
@@ -127,53 +116,69 @@ span.img-rounded {
     padding-bottom: 3%;
 }
 
-#skill2, #skill4, #skill6 {
+.skill2 {
     padding: 10% 0 10% 0;
     vertical-align: middle;
     background-color: rgb(148,148,148);
 }
 
-#skill1, #skill3, #skill5 {
+.skill1 {
     padding: 10% 0 10% 0;
     vertical-align: middle;
     background-color: rgb(234,234,234);
 }
 
-#skill1:hover,
-#skill2:hover,
-#skill3:hover,
-#skill4:hover,
-#skill5:hover,
-#skill6:hover{
+.skill1:hover,
+.skill2:hover {
     background-color: rgb(95,95,95);
     color : rgb(234,234,234);
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
+    #section1 {
+        background:url('../img/section1.jpg') 50% 0 no-repeat fixed;
+        color: rgb(234,234,234);
+        height: 300px;
+        margin: 0;
+        padding: 100px 0 60px 0;
+        background-size: cover;
+    }
+
+    #section3 {
+        background:url('../img/section3.jpg') 50% 0 no-repeat fixed;
+        color: rgb(95,95,95);
+        height: 800px;
+        margin: 0;
+        padding: 50px 0 60px 0;
+        background-size: cover;
+    }
+
+    span.img-rounded {
+        -webkit-border-radius: 50%;
+           -moz-border-radius: 50%;
+                border-radius: 50%;
+        border: 3px solid rgb(234,234,234);
+        display:inline-block;
+        margin:100px 10px 10px 10px;
+    }
+
     h1 {
-        font-size: 32px;
-    }
-
-    h4 {
-        font-size: 16px;
-    }
-
-    h2{
-        text-align: center;
-        font-size: 25px;
-        margin-bottom: 25px;
-    }
-
-    h3{
         font-size: 20px;
     }
 
-    .all-work {
-        max-width: 314px;
-        margin: 0 auto;
+    h2{
+        font-size: 16px;
+    }
+
+    h3{
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 13px;
     }
 
     p{
-        font-size: 15px;
+        font-size: 12px;
     }
 }
