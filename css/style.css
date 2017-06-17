@@ -1,0 +1,179 @@
+body{
+    color: rgb(95,95,95);
+    font-family: 'Bree Serif', serif;
+}
+
+.container {
+    max-width: 997px;
+    margin: 0 auto;
+}
+
+/*h1 {
+    font-size: 52px;
+    font-weight: 100;
+}*/
+
+/*h4 {
+    font-size: 22px;
+}*/
+
+.logo {
+    margin-top: 20px;
+}
+
+#header {
+    position: fixed;
+    color: green;
+    margin: 5% 0 0 0;
+    padding: 0 5% 0 5%;
+    width: 100%;
+}
+
+#dp_img {
+    border : 2;
+    border-color: white;
+}
+
+span.img-rounded {
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    border: 10px solid rgb(234,234,234);
+    display:inline-block;
+    margin:100px 10px 10px 10px;
+}
+
+/*span.img-rounded > img {
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+}*/
+
+#section1{
+    background:url('../img/section1.jpg') 50% 0 no-repeat fixed;
+    color: rgb(234,234,234);
+    height: 600px;
+    margin: 0;
+    padding: 200px 0 120px 0;
+    background-size: cover;
+}
+
+#section2 {
+    color: rgb(95,95,95);
+    padding: 10% 0 5% 0;
+    background-color: rgb(234,234,234);
+    /*background: url('../img/section2.jpg') 50% 0 no-repeat fixed;*/
+}
+
+#section3{
+    background:url('../img/section3.jpg') 50% 0 no-repeat fixed;
+    color: rgb(95,95,95);
+    height: 1500px;
+    margin: 0;
+    padding: 100px 0 120px 0;
+    background-size: cover;
+}
+
+#section4 {
+    padding: 2% 0 1% 0;
+    color: rgb(234,234,234);
+    background-color: rgb(148,148,148);
+}
+
+#section2 hr {
+    border-top: 5px solid rgb(95,95,95);
+    width: 10%;
+}
+
+#section3 hr {
+    border-top: 5px solid rgb(95,95,95);
+    width: 5%;
+}
+
+#section4 hr {
+    border-top: 1px solid rgb(234,234,234);
+    width: 30%;
+}
+
+#section2-social {
+    vertical-align: middle;
+    padding-top: 2rem;
+}
+
+.work {
+    margin-bottom: 10px;
+}
+
+#contact-info {
+    border-left: 1px solid rgb(234,234,234);
+    border-top:  1px solid rgb(234,234,234);
+    padding-left: 5%;
+}
+
+#contact-form {
+    border-right: 1px solid rgb(234,234,234);
+    border-top:  1px solid rgb(234,234,234);
+    padding-right: 5%;
+    padding-top: 5%;
+}
+
+.form-button {
+    width: 100%;
+    color : rgb(148,148,148);
+    background-color: rgb(234,234,234);
+}
+
+#contact-me {
+    padding-bottom: 3%;
+}
+
+#skill2, #skill4, #skill6 {
+    padding: 10% 0 10% 0;
+    vertical-align: middle;
+    background-color: rgb(148,148,148);
+}
+
+#skill1, #skill3, #skill5 {
+    padding: 10% 0 10% 0;
+    vertical-align: middle;
+    background-color: rgb(234,234,234);
+}
+
+#skill1:hover,
+#skill2:hover,
+#skill3:hover,
+#skill4:hover,
+#skill5:hover,
+#skill6:hover{
+    background-color: rgb(95,95,95);
+    color : rgb(234,234,234);
+}
+
+@media screen and (max-width: 767px){
+    h1 {
+        font-size: 32px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    .all-work {
+        max-width: 314px;
+        margin: 0 auto;
+    }
+
+    p{
+        font-size: 15px;
+    }
+}
