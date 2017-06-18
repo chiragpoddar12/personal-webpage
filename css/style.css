@@ -65,7 +65,7 @@ span.img-rounded {
 #section3{
     background:url('../img/section3.jpg') 50% 0 no-repeat fixed;
     color: rgb(95,95,95);
-    height: 1500px;
+    height: 1050px;
     margin: 0;
     padding: 100px 0 120px 0;
     background-size: cover;
@@ -121,14 +121,14 @@ span.img-rounded {
 }
 
 .skill2 {
-    padding: 10% 0 10% 0;
-    vertical-align: middle;
+    /*padding: 10% 0 10% 0;
+    vertical-align: middle;*/
     background-color: rgb(148,148,148);
 }
 
 .skill1 {
-    padding: 10% 0 10% 0;
-    vertical-align: middle;
+    /*padding: 10% 0 10% 0;
+    vertical-align: middle;*/
     background-color: rgb(234,234,234);
 }
 
@@ -138,9 +138,59 @@ span.img-rounded {
     color : rgb(234,234,234);
 }
 
+.card {
+    position: relative;
+    padding: 5% 0 20% 0;
+    /*padding-bottom: 25%;*/
+    /*width: 100%;*/
+    text-align: center;
+    vertical-align: middle;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    /*top: 0;
+    left: 0;*/
+    width: 100%;
+    height: 100%;
+}
+
+.card-front,
+.card-back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s;
+}
+
+.card-back {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card.effect-click.flipped .card-front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card.effect-click.flipped .card-back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
 @media screen and (max-width: 768px) {
     #collapse-trigger {
         display: block;
+    }
+
+    .card {
+        position: relative;
+        padding: 0% 0 20% 0;
+        /*padding-bottom: 25%;*/
+        /*width: 100%;*/
+        text-align: center;
+        vertical-align: middle;
     }
 
     #section1 {
@@ -155,7 +205,7 @@ span.img-rounded {
     #section3 {
         background:url('../img/section3.jpg') 50% 0 no-repeat fixed;
         color: rgb(95,95,95);
-        height: 800px;
+        height: 500px;
         margin: 0;
         padding: 50px 0 60px 0;
         background-size: cover;
